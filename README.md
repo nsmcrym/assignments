@@ -5,17 +5,6 @@ ec2インスタンスを作り、ターミナルからssh ec2-user@{IPアドレ�
 sudo yum install vim -y
 ```
 
-## screenのインストール、設定
-```sh
-sudo yum install screen -y
-```
-```sh
-~/.screenrc
-```
-```sh
-hardstatus alwayslastline "%{= bw}%-w%{= wk}%n%t*%{-}%+w"
-```
-
 ## dockerのインストール、設定
 ```sh
 sudo yum install -y docker
