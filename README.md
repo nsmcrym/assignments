@@ -1,8 +1,11 @@
-ec2インスタンスを作り、ターミナルからssh ec2-user@{IPアドレス} -i {秘密鍵ファイルのパス}でログインする
-
 ## vimのインストール
 ```sh
 sudo yum install vim -y
+```
+
+## Gitのインストール
+```sh
+sudo yum install git -y
 ```
 
 ## dockerのインストール、設定
@@ -23,7 +26,13 @@ sudo chmod +x /usr/local/lib/docker/cli-plugins/docker-compose
 ```sh
 docker compose version
 ```
-## mysqlのインストール
+## ビルド　起動
+```
+docker compose build
+docker compose up -d
+```
+
+## mysqlへの接続
 ```sh
 docker compose exec mysql mysql example_db
 ```
@@ -58,7 +67,7 @@ CREATE TABLE `user_relationships` (
 ```
 
 
-以下の構造で実装する
+## ディレクトリ構成
 ```
 .
 └── assignments
