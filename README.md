@@ -10,7 +10,7 @@ git clone https://github.com/nsmcrym/assignments.git
 cd assignments
 ```
 
-## dockerのインストール、設定
+## dockerのインストール
 ```sh
 sudo yum install -y docker
 sudo systemctl start docker
